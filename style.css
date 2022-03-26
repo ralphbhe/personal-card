@@ -1,0 +1,118 @@
+:root {
+    --title-font: 'lobster', cursive;
+    --bg-color: #1F1D36;
+    --bg-image: url("https://images.pexels.com/photos/1631677/pexels-photo-1631677.jpeg");
+    --text-color: #f7f7f7;
+}
+
+body {
+    background: var(--bg-image);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100vh;
+    color: var(--text-color);
+}
+
+body,
+title {
+    color: var(--text-color);
+}
+
+h1 {
+    font-family: var(--title-font);
+}
+
+
+/* this is the code for the container */
+
+body,
+.container,
+.photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo {
+    min-height: 12rem;
+}
+
+.photo img {
+    width: 12rem;
+    border-radius: 100%;
+    z-index: 1;
+    margin: 2rem 0;
+}
+
+
+/* This is the shadow on the image */
+
+.circle {
+    width: 15rem;
+    height: 2rem;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(284deg, rgba(0, 0, 0, 0.2) 100%, rgba(240, 236, 227, 1) 100%);
+    border-radius: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 230px;
+}
+
+
+/* this is the code for the button */
+
+.profile {
+    margin-top: 2rem;
+}
+
+.profile button {
+    background-color: white;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.info {
+    text-align: center;
+}
+
+info h1,
+h4 {
+    padding: 0 0 1rem 0;
+}
+
+.social-icon {
+    padding: 0 1.2rem;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+
+/* this is the code for card */
+
+.card {
+    width: 25rem;
+    height: 35rem;
+    padding: 0 3rem;
+    border-radius: 25px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(284deg, rgba(241, 143, 143, 0.499) 100%, rgb(254, 255, 255) 100%)
+}
+
+.profile button:hover {
+    background-color: rgb(207, 84, 84);
+    color: white;
+}
